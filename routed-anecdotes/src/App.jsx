@@ -6,6 +6,7 @@ import Menu from "./components/Menu";
 import AnecdoteList from "./components/AnecdoteList";
 import About from "./components/About";
 import CreateNew from "./components/CreateNew";
+import Anecdote from "./components/Anecdote";
 
 function App() {
   const [anecdotes, setAnecdotes] = useState([
@@ -28,8 +29,10 @@ function App() {
   return (
     <>
       <Menu />
+      <h1>Software anecdotes</h1>
       <Routes>
         <Route path="/" element={<AnecdoteList anecdotes={anecdotes} />} />
+        <Route path="/:id" element={<Anecdote anecdotes={anecdotes} />} />
         <Route path="/create" element={<CreateNew />} />
         <Route path="/about" element={<About />} />
       </Routes>
