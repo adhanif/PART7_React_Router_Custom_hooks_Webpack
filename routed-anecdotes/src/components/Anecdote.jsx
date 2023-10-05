@@ -1,15 +1,16 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
-const Anecdote = ({ anecdotes }) => {
-  const { id } = useParams();
-  const anecdote = anecdotes.find((anecdote) => anecdote.id === Number(id));
-
+const Anecdote = ({ anecdote }) => {
   return (
-    <div>
-      <h1>{anecdote.content}</h1>
-      <p>has {anecdote.votes} votes</p>
-    </div>
+    anecdote && (
+      <div>
+        <h1>{anecdote.content}</h1>
+        <h3>{anecdote.author}</h3>
+        <h3>{anecdote.url}</h3>
+        <p>has {anecdote.votes} votes</p>
+      </div>
+    )
   );
 };
 
