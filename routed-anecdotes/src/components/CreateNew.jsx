@@ -15,6 +15,15 @@ const CreateNew = ({ addNew }) => {
       url: url.value,
       votes: 0,
     });
+    content.reset();
+    author.reset();
+    url.reset();
+  };
+
+  const handleReset = () => {
+    content.reset();
+    author.reset();
+    url.reset();
   };
 
   return (
@@ -33,7 +42,10 @@ const CreateNew = ({ addNew }) => {
           url for more url
           <input {...url} />
         </div>
-        <button>create</button>
+        <button type="submit">create</button>
+        <button type="button" onClick={handleReset}>
+          reset
+        </button>
       </form>
     </div>
   );
