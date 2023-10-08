@@ -9,10 +9,11 @@ const CreateNew = ({ addNew }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     addNew({
-      content: content.value,
-      author: author.value,
-      url: url.value,
+      content: content.inputProps.value,
+      author: author.inputProps.value,
+      url: url.inputProps.value,
       votes: 0,
     });
     content.reset();
@@ -32,15 +33,15 @@ const CreateNew = ({ addNew }) => {
       <form onSubmit={handleSubmit}>
         <div>
           content
-          <input {...content} />
+          <input {...content.inputProps} />
         </div>
         <div>
           author
-          <input {...author} />
+          <input {...author.inputProps} />
         </div>
         <div>
           url for more url
-          <input {...url} />
+          <input {...url.inputProps} />
         </div>
         <button type="submit">create</button>
         <button type="button" onClick={handleReset}>
