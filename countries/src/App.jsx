@@ -7,7 +7,6 @@ function App() {
   const nameInput = useField("text");
   const [name, setName] = useState("");
   const country = useCountry(name);
-
   const fetch = (e) => {
     e.preventDefault();
     setName(nameInput.value);
