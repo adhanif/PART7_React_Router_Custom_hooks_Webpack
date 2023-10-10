@@ -1,0 +1,61 @@
+{
+  "persons": [
+    {
+      "name": "Dan Abramov",
+      "number": "12-43-234345",
+      "id": 1
+    },
+    {
+      "name": "manni",
+      "number": "1564564",
+      "id": 2
+    },
+    {
+      "name": "dani",
+      "number": "2323232",
+      "id": 3
+    },
+    {
+      "name": "afafef",
+      "number": "fafaf",
+      "id": 4
+    }
+  ],
+  "notes": [
+    {
+      "content": "the app state is in redux store",
+      "important": true,
+      "id": 1
+    },
+    {
+      "content": "state changes are made with actions",
+      "important": false,
+      "id": 2
+    },
+    {
+      "content": "fafaf",
+      "important": true,
+      "id": 3
+    },
+    {
+      "content": "fff",
+      "important": true,
+      "id": 4
+    },
+    {
+      "content": "",
+      "important": true,
+      "id": 5
+    },
+    {
+      "content": "",
+      "important": true,
+      "id": 6
+    },
+    {
+      "content": "afaef",
+      "important": true,
+      "id": 7
+    }
+  ]
+}
