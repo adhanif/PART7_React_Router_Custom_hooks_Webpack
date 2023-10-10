@@ -1,6 +1,7 @@
 import { useField, useResource } from "./hooks/index";
 import "./App.css";
 import { useEffect } from "react";
+import React from "react";
 
 function App() {
   const content = useField("text");
